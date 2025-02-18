@@ -1,0 +1,217 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f1f5f9; /* Light background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Header */
+h1 {
+  color: #2c3e50;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input and Buttons */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #ecf0f1;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+  background-color: #bdc3c7;
+  transform: translateX(5px);
+}
+
+/* Task Text */
+.task-text {
+  font-size: 16px;
+  color: #2c3e50;
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
+
+/* Edit and Delete Buttons */
+button.edit-btn,
+button.delete-btn {
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button.edit-btn:hover {
+  background-color: #27ae60;
+}
+
+button.delete-btn {
+  background-color: #e74c3c;
+  margin-left: 10px;
+}
+
+button.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Select Element */
+select {
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeT0iMHB4IiB4PSIycHgiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgaWQ9InN0b3Bfc3ViamVjdCI+PHBhdGggZD0iTTEuMCA0bC00LjU2IDMuNTcgNCAzLjU3IDQuNTYgMy41N0wyIDZ2M2wtMy4zMiAzLjUzLjM2TTEuMCA0eicgZD0iIj48L3BhdGg+PC9zdmc+Cg==");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Textarea */
+textarea {
+  font-family: "Arial", sans-serif;
+  resize: vertical;
+  min-height: 100px;
+  min-width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Transitions */
+input[type="text"],
+select,
+textarea,
+button,
+li {
+  transition: all 0.3s ease;
+}
+
+/* Basic styles */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+button {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  color: red;
+}
+
+/* Priority color coding */
+.low {
+  background-color: #d3ffd3; /* Light green for low priority */
+}
+
+.medium {
+  background-color: #fff4cc; /* Light yellow for medium priority */
+}
+
+.high {
+  background-color: #ffcccc; /* Light red for high priority */
+}
+
+/* Completed task styling */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
